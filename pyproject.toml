@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chlor-gdcm-eof"
+version = "0.1.0"
+description = "GDCM-EOF chlorophyll-a reconstruction code extracted from the original notebook."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "torch",
+  "tqdm",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
